@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Readme Generator",
+    "version": "1.0",
+    "description": "A chatbot to help you by creating readme file of your repo easily. Here you only have to write the description of your repo and it will write the whole readme for you.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "Godcode.png",
+        "48": "Godcode.png",
+        "128": "Godcode.png"
+      }
+    },
+    "icons": {
+      "16": "Godcode.png",
+      "48": "Godcode.png",
+      "128": "Godcode.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
+  

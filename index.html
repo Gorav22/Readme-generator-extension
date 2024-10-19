@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Helper Chatbot</title>
+  <style>
+    
+.chat-container {
+    width: 400px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+}
+
+.message {
+    margin-bottom: 15px; 
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: #e7f3fe;
+    color: #333;
+}
+
+/* Style for user input field */
+#userInput {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px; /* Padding inside the input field */
+    border: 1px solid #ccc; /* Light border around input field */
+    border-radius: 4px; /* Rounded corners for input field */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Style for send button */
+#sendMessage {
+    padding: 10px 15px; /* Padding inside the button */
+    margin-top: 10px; /* Space above the button */
+    border: none; /* No border for button */
+    border-radius: 4px; /* Rounded corners for button */
+    background-color: #007bff; /* Blue background color for button */
+    color: white; /* White text color for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 150px;
+}
+
+/* Button hover effect */
+#sendMessage:hover {
+    background-color: #0056b3;
+}
+
+/* Style for response area (optional) */
+#response {
+    margin-top: 15px; /* Space above response area */
+    padding: 10px; /* Padding inside response area */
+    border-radius: 5px; /* Rounded corners for response area */
+    background-color: #d4edda; /* Light green background for responses */
+}
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="message">How can I help you today?</div>
+    <input type="text" id="userInput" placeholder="Type your message here..." />
+    <button id="sendMessage">Send</button>
+    <div id="response"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
